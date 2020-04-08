@@ -1,0 +1,80 @@
+/* ************************** */
+/* IMPORT FONT */
+/* ************************** */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap");
+
+/* ************************** */
+/* RESET STYLES */
+/* ************************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ************************** */
+/* COLOR PALETTE */
+/* ************************** */
+:root {
+  --var-color-bgbody: #3a54b4;
+  --var-color-fontW: #fff;
+  --var-color-required: #ff4040;
+}
+/* ************************** */
+/* GENERAL STYLES */
+/* ************************** */
+/* html{
+    font-size: 62.5%;
+} */
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--var-color-bgbody);
+  color: var(--var-color-fontW);
+  background-image: url(./img/dog.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+}
+section {
+  width: 50%;
+}
+section h2 {
+  font-size: 2.25rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+form {
+  width: 100%;
+}
+input,
+textarea {
+  border: solid 1px var(--var-color-fontW);
+  border-width: 0 0 1px 0;
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--var-color-fontW);
+  width: 100%;
+  transition: border-width ease-in-out 0.1s;
+  margin: 0.5rem 0;
+}
+input:hover {
+  border-width: 0 0 3px 0;
+}
+textarea{
+    resize: vertical;
+}
+
+/* ************************** */
+/* HEADER */
+/* ************************** */
+header h1 {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+}
